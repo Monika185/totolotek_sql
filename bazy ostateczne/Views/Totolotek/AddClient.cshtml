@@ -1,0 +1,15 @@
+﻿@model bazy_ostateczne.Models.ClientViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm("FormTwo", "Form", FormMethod.Post))
+{
+    @Html.TextBoxFor(m => m.FirstName)
+    @Html.TextBoxFor(m => m.Name)
+
+    <input type="submit" value="Submit strongly type synchronous form" />
+}
